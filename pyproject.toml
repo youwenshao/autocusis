@@ -3,6 +3,7 @@ name = "autocusis"
 version = "0.1.0"
 description = "AutoCUSIS - CUHK academic progress planner & study-scheme optimizer"
 readme = "README.md"
+license = "AGPL-3.0-or-later"
 requires-python = ">=3.11,<3.14"
 dependencies = [
     "ortools>=9.14",
