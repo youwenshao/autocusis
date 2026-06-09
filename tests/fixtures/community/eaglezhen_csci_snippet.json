@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "scraped_at": "2026-06-02T00:58:23Z",
+    "subject": "CSCI",
+    "total_courses": 1
+  },
+  "courses": [
+    {
+      "subject": "CSCI",
+      "course_code": "1020",
+      "title": "Hands-on Introduction to C++",
+      "credits": "1.00",
+      "terms": [
+        {
+          "term_code": "2390",
+          "term_name": "2025-26 Term 2",
+          "schedule": [
+            {
+              "section": "--LEC (6161)",
+              "meetings": [
+                {
+                  "time": "Th 1:30PM - 2:15PM",
+                  "location": "Room 404",
+                  "instructor": "Dr. Test"
+                }
+              ],
+              "availability": {
+                "capacity": "50",
+                "enrolled": "10",
+                "available_seats": "40"
+              }
+            },
+            {
+              "section": "-L01-LAB (7916)",
+              "meetings": [
+                {
+                  "time": "Th 3:30PM - 5:15PM",
+                  "location": "Lab 123",
+                  "instructor": "Dr. Test"
+                }
+              ],
+              "availability": {
+                "capacity": "50",
+                "enrolled": "10",
+                "available_seats": "40"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

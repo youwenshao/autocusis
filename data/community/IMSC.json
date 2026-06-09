@@ -1,0 +1,1339 @@
+{
+  "metadata": {
+    "scraped_at": "2026-06-02T03:00:50.190879+00:00",
+    "subject": "IMSC",
+    "subject_title": "Artic BSc PhD Pgm in Math Sci",
+    "total_courses": 32,
+    "scraper_version": "memory-safe-v2.0"
+  },
+  "courses": [
+    {
+      "subject": "IMSC",
+      "course_code": "1038",
+      "title": "Algebra I",
+      "credits": "3.00",
+      "terms": [
+        {
+          "term_code": "2380",
+          "term_name": "2025-26 Term 1",
+          "schedule": [
+            {
+              "section": "--LEC (9873)",
+              "meetings": [
+                {
+                  "time": "Mo 9:30AM - 11:15AM",
+                  "location": "Basic Med Sci Bldg Rm2",
+                  "instructor": "Professor YANG Ziquan",
+                  "dates": "1/9, 8/9, 15/9, 22/9, 29/9, 6/10, 13/10, 20/10, 27/10, 3/11, 10/11, 17/11, 24/11"
+                },
+                {
+                  "time": "Th 2:30PM - 3:15PM",
+                  "location": "Basic Med Sci Bldg Rm2",
+                  "instructor": "Professor YANG Ziquan",
+                  "dates": "4/9, 11/9, 18/9, 25/9, 2/10, 9/10, 16/10, 23/10, 30/10, 6/11, 13/11, 20/11, 27/11"
+                }
+              ],
+              "availability": {
+                "capacity": "20",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "7",
+                "status": "Open"
+              },
+              "class_attributes": "English only"
+            },
+            {
+              "section": "-T01-TUT (9878)",
+              "meetings": [
+                {
+                  "time": "Th 1:30PM - 2:15PM",
+                  "location": "Basic Med Sci Bldg Rm2",
+                  "instructor": "Staff",
+                  "dates": "4/9, 11/9, 18/9, 25/9, 2/10, 9/10, 16/10, 23/10, 30/10, 6/11, 13/11, 20/11, 27/11"
+                }
+              ],
+              "availability": {
+                "capacity": "20",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "7",
+                "status": "Open"
+              },
+              "class_attributes": "English only"
+            }
+          ]
+        }
+      ],
+      "description": "This course is intended as the first course on algebra for students majoring in Articulated Bachelor of Science – Ph.D. Programme in Mathematical Sciences. The course emphasizes the fundamental concepts and principles in algebra, and focuses on rigorous reasoning of mathematical statements, computational techniques as well as applications.",
+      "enrollment_requirement": "Not for students who have taken MATH1030/1038.",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "Students are able to\n\n* define and distinguish the usual concepts used in algebra\n* logically prove basic statements in algebra and understand ideas behind the proofs of theorems\n* solve problems using algebra, including those in an abstract setting\n* apply the methods of algebra to standard problems in physics, engineering, or business economics\n* appreciate the rationale and impact of algebra to human development in science and technology",
+      "course_syllabus": "Set notations; system of linear equations, Gaussian elimination; matrices, determinants; Euclidean and abstract vector spaces, subspaces, linear span, linear independence, bases and dimension; definition and examples of linear transformations; eigenvalues and eigenvectors, diagonalization; orthogonality, Gram-Schmidt process.",
+      "assessment_types": {
+        "Essay test or exam": "55",
+        "Others": "10",
+        "Short answer test or exam": "35"
+      },
+      "feedback_evaluation": "Mid-term evaluation (optional)\nEnd-term evaluation (mandatory)",
+      "required_readings": "- -",
+      "recommended_readings": "* G. Strang: Linear algebra and applications\n* S. Friedberg, A. Insel, L. Spence: Linear algebra"
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "1113",
+      "title": "Basic Physics I",
+      "credits": "3.00",
+      "terms": [
+        {
+          "term_code": "2380",
+          "term_name": "2025-26 Term 1",
+          "schedule": [
+            {
+              "section": "--LEC (9874)",
+              "meetings": [
+                {
+                  "time": "Tu 3:30PM - 5:15PM",
+                  "location": "Tsang Shiu Tim Bldg 102",
+                  "instructor": "Dr. YIP Long Sang Kenny",
+                  "dates": "2/9, 9/9, 16/9, 23/9, 30/9"
+                },
+                {
+                  "time": "Tu 3:30PM - 5:15PM",
+                  "location": "Tsang Shiu Tim Bldg 102",
+                  "instructor": "Dr. YIP Long Sang Kenny",
+                  "dates": "14/10, 21/10, 28/10, 4/11, 11/11, 18/11, 25/11"
+                },
+                {
+                  "time": "Th 9:30AM - 10:15AM",
+                  "location": "Lee Shau Kee Building 301",
+                  "instructor": "Dr. YIP Long Sang Kenny",
+                  "dates": "4/9, 11/9, 18/9, 25/9, 2/10, 9/10, 16/10, 23/10, 30/10, 6/11, 13/11, 20/11, 27/11"
+                }
+              ],
+              "availability": {
+                "capacity": "20",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "7",
+                "status": "Open"
+              },
+              "class_attributes": "English only"
+            },
+            {
+              "section": "-T01-TUT (9877)",
+              "meetings": [
+                {
+                  "time": "Th 10:30AM - 11:15AM",
+                  "location": "Lee Shau Kee Building 301",
+                  "instructor": "Staff",
+                  "dates": "4/9, 11/9, 18/9, 25/9, 2/10, 9/10, 16/10, 23/10, 30/10, 6/11, 13/11, 20/11, 27/11"
+                }
+              ],
+              "availability": {
+                "capacity": "20",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "7",
+                "status": "Open"
+              },
+              "class_attributes": "English only"
+            }
+          ]
+        }
+      ],
+      "description": "This introductory calculus-based course discusses the basic principles of mechanics, fluids and waves. Topics include: particle kinematics, force and motion, work and kinetic energy, potential energy, momentum, systems of particles and collisions, rotation, Newton’s law of gravitation, fluid statics and the dynamics of ideal fluids, oscillations, and waves. Students are advised to take this course concurrently with an introductory mathematics course that includes vectors and calculus.",
+      "enrollment_requirement": "Not for students who have taken PHYS1111 or 1113.",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "Upon completion of the course, students should have\n\n* gained an understanding in Newtonian mechanics and waves, within a formalism using vectors and elementary calculus;\n* acquired familiarity with some mathematical methods, such as vector algebra and elementary calculus, gained an appreciation of their roles and applications in mechanics and the ability to apply them in other courses;\n* acquired the necessary background for upper-level courses in mechanics as well as other physics courses in the curriculum;\n* developed an appreciation of the quantitative nature of physics;\n* built up skills for solving relevant problems; and\n* acquired a sense of the importance of classical physics, especially its fundamental role in different fields in science and engineering.",
+      "course_syllabus": "* Particle kinematics and dynamics: Vectors and scalars; motion in one, two and three dimensions; Newton's laws, force and motion; circular motion; work, kinetic energy, potential energy, conservation of energy. [Elementary calculus will be assumed, and only reviewed very quickly.]\n* Systems of particles: Center of mass, linear momentum, impulse, Newton's second law for a system of particles, collisions.\n* Rotation: Rotational kinematics, rotational inertia, torque, Newton's second law for rotation, work and rotational kinetic energy, rolling, angular momentum, conservation of angular momentum.\n* Gravitation: Newton's law of gravitation, gravitational potential energy, Kepler’s laws.\n* Fluids: Pressure, Pascal's principle, Archimedes' principle, ideal fluids in flow and equation of continuity, Bernoulli's equation.\n* Oscillations: Simple harmonic motion, energy in a simple harmonic motion, damped oscillation, forced oscillations and resonance.\n* Waves: Transverse and longitudinal waves, wavelength and frequency, energy of a travelling string wave, superposition, interference of waves, standing waves, sound waves, the speed of sound, intensity and sound level, interference, beats, Doppler’s effect.",
+      "assessment_types": {
+        "Essay test or exam": "50",
+        "Others": "10",
+        "Short answer test or exam": "40"
+      },
+      "feedback_evaluation": "Mid-term evaluation (optional)\n\nEnd-term evaluation (mandatory)",
+      "required_readings": "- -",
+      "recommended_readings": "* D Halliday, R Resnick, and J Walker, Fundamentals of Physics, 7th edition (or later edition), John Wiley & Sons, 2005. [Textbook, see references below for alternatives at equivalent level]\n* HD Young and RA Freedman, University Physics with Modern Physics, 12th edition, Addison-Wesley 2008 (or later edition) [Reference book]\n* JW Jerret, Jr and RA Serway, Physics for Scientists and Engineers with Modern Physics, 7th edition, Thomson 2008 (or later edition) [Reference book]\n* PM Fishbane, SG Gasiorowicz, ST Thornton, Physics for Scientists and Engineers with Modern Physics, 3rd edition (Pearson 2005) (or later edition) [Reference book]\n* SS Tong and K Young, E-learning Micro-modules for Introductory Physics, CUHK Physics Department, 2015 (and as continuously updated) [Supplementary material]"
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "1122",
+      "title": "Basic Physics II",
+      "credits": "3.00",
+      "terms": [
+        {
+          "term_code": "2410",
+          "term_name": "2025-26 Summer Session",
+          "schedule": [
+            {
+              "section": "--LEC (1414)",
+              "meetings": [
+                {
+                  "time": "Tu 9:30AM - 11:15AM",
+                  "location": "Lady Shaw Bldg LT3",
+                  "instructor": "Dr. LAI Yu Hang",
+                  "dates": "12/5, 19/5, 26/5, 2/6, 9/6, 16/6, 23/6"
+                },
+                {
+                  "time": "Th 9:30AM - 11:15AM",
+                  "location": "Lady Shaw Bldg LT3",
+                  "instructor": "Dr. LAI Yu Hang",
+                  "dates": "14/5, 21/5, 28/5, 4/6, 11/6, 18/6, 25/6"
+                }
+              ],
+              "availability": {
+                "capacity": "13",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "0",
+                "status": "Closed"
+              },
+              "class_attributes": "English only"
+            },
+            {
+              "section": "-T01-TUT (1415)",
+              "meetings": [
+                {
+                  "time": "Tu 11:30AM - 12:15PM",
+                  "location": "Lady Shaw Bldg LT3",
+                  "instructor": "Staff",
+                  "dates": "12/5, 19/5, 26/5, 2/6, 9/6, 16/6, 23/6"
+                },
+                {
+                  "time": "Th 11:30AM - 12:15PM",
+                  "location": "Lady Shaw Bldg LT3",
+                  "instructor": "Staff",
+                  "dates": "14/5, 21/5, 28/5, 4/6, 11/6, 18/6, 25/6"
+                }
+              ],
+              "availability": {
+                "capacity": "13",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "0",
+                "status": "Closed"
+              },
+              "class_attributes": "English only"
+            }
+          ]
+        }
+      ],
+      "description": "This introductory calculus-based course discusses the basic principles of optics, special relativity, and quantum physics and its applications, plus an introduction to particle physics. Topics include: Geometric optics, interference, diffraction, special relativity, quantum physics and its applications to atoms, molecules, solids, and nuclei, particle physics. Students are advised to take this course concurrently with a course in calculus.",
+      "enrollment_requirement": "Not for students who have taken PHYS1122. Pre-requisite: IMSC2018.",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "Upon completion of the course, students will be able to\n\n* describe the basic concepts of optics, special relativity, and quantum physics\n* analyze and solve basic problems in optics and special relativity\n* apply the concepts of quantum physics to analyze basic one-dimensional bound state problems\n* state and appreciate applications of quantum mechanics in microscopic situations\n* have the necessary background for relevant upper-level courses.",
+      "course_syllabus": "* The Nature and Propagation of Light: The nature of light, with a qualitative discussion on electromagnetic waves, reflection and refraction, total internal reflection, polarization, dispersion, Huygens’ principle.\n* Geometric Optics: Reflection and reflection at a plane surface and a spherical surface, thin lenses, some optical instruments.\n* Interference: Interference and coherent sources, Young’s interference experiment, intensity in interference patterns, interference in thin films, Michelson’s interferometer.\n* Diffraction: Diffraction and wave theory of light, Fresnel and Fraunhofer diffraction, diffraction from a single slit, intensity in single-slit diffraction, multiple slits, diffraction gratings, circular aperture, resolving power.\n* Relativity: Galilean relativity, Einstein’s postulates, relativity of simultaneity, relativity of time intervals, relativity of length, the Lorentz transformation, Lorentz velocity transformation equations, relativistic mementum, relativistic work and energy, mass and energy.\n* Photons, Electrons, and Atoms: Emission and absorption of light, photoelectric effect, atomic line spectra and energy levels, the nuclear atom, Bohr model, X-ray production, the Compton effect, photons and EM waves.\n* The Wave Nature of Particles: de Broglie waves, electron diffraction, double-slit experiment revisited, probability and uncertainty, the electron microscope, wave functions and the Schrodinger equation.\n* Quantum Mechanics: Particle in a box, potential wells, potential barriers and tunneling, harmonic oscillator, (brief) three-dimensional problems.\n* Atomic Physics: The wave function for hydrogen, physical interpretation of the quantum numbers, the Zeeman effect, the electron spin, many-electron atoms and the Pauli exclusion principle, the periodic table, X-ray spectra.\n* Molecules and Solids: Molecular bonds, Molecular spectra, bonding in solids, free-electron model of metals, band theory of solids, electrical conduction in metals, insulators, and semiconductors, semiconductor devices, STM.\n* Nuclear Physics: Some properties of nuclei, nuclear binding and nuclear structure (nuclear force and nuclear models), nuclear stability and radioactivity, decay processes, nuclear reactions, nuclear fission, nuclear fusion, biological effects of radiation, (optional) NMR and MRI.\n* Particle Physics and Cosmology: Some particles, positron and antiparticles, particles as force mediator and the meson, particle accelerators and detectors, particles and interactions, finding patterns in particles, quarks, the standard model and beyond, the Cosmic connection (the expanding universe, the big bang, the standard model and the history of the universe).",
+      "assessment_types": {
+        "Essay test or exam": "50",
+        "Others": "10",
+        "Short answer test or exam": "40"
+      },
+      "feedback_evaluation": "Mid-term evaluation (optional)\n\nEnd-term evaluation (mandatory)",
+      "required_readings": "- -",
+      "recommended_readings": "* H.D. Young and R.A. Freedman, “University Physics with Modern Physics”, 12 th edition, Addison-Wesley Publishing Company, 2008 (or later editions). [This is the current edition of Sears and Zemansky’s University Physics.]\n* J.W. Jewett, Jr., R.A. Serway, “Physics for Scientists and Engineers with Modern Physics” (7th edition) (Thomson 2008) (or later editions). [The Modern Physics part is good.]\n* D. Halliday, R. Resnick, and J. Walker, “Fundamentals of Physics”, 7th edition, John Wiley & Sons, 2005 (or later editions) [The international student edition of the 9th edition is renamed “Principles of Physics”.]\n* P.M. Fishbane, S.G. Gasiorowicz, S.T. Thornton, “Physics for Scientists and Engineers with Modern Physics”, 3rd edition (Pearson 2005) (or later editions)."
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "2018",
+      "title": "Calculus I",
+      "credits": "3.00",
+      "terms": [
+        {
+          "term_code": "2380",
+          "term_name": "2025-26 Term 1",
+          "schedule": [
+            {
+              "section": "--LEC (9875)",
+              "meetings": [
+                {
+                  "time": "Tu 1:30PM - 3:15PM",
+                  "location": "Lee Shau Kee Building 206",
+                  "instructor": "Dr. CHENG Man Chuen",
+                  "dates": "2/9, 9/9, 16/9, 23/9, 30/9"
+                },
+                {
+                  "time": "Tu 1:30PM - 3:15PM",
+                  "location": "Lee Shau Kee Building 206",
+                  "instructor": "Dr. CHENG Man Chuen",
+                  "dates": "14/10, 21/10, 28/10, 4/11, 11/11, 18/11, 25/11"
+                },
+                {
+                  "time": "Fr 9:30AM - 10:15AM",
+                  "location": "Y.C. Liang Hall G06",
+                  "instructor": "Dr. CHENG Man Chuen",
+                  "dates": "5/9, 12/9, 19/9, 26/9, 3/10, 10/10, 17/10, 24/10, 31/10, 7/11, 14/11, 21/11, 28/11"
+                }
+              ],
+              "availability": {
+                "capacity": "20",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "7",
+                "status": "Open"
+              },
+              "class_attributes": "English only"
+            },
+            {
+              "section": "-T01-TUT (9879)",
+              "meetings": [
+                {
+                  "time": "Fr 10:30AM - 11:15AM",
+                  "location": "Y.C. Liang Hall G06",
+                  "instructor": "Staff",
+                  "dates": "5/9, 12/9, 19/9, 26/9, 3/10, 10/10, 17/10, 24/10, 31/10, 7/11, 14/11, 21/11, 28/11"
+                }
+              ],
+              "availability": {
+                "capacity": "20",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "7",
+                "status": "Open"
+              },
+              "class_attributes": "English only"
+            }
+          ]
+        }
+      ],
+      "description": "This course is intended to introduce the basics of the calculus of functions of several variables. Topics include: vectors, geometry of Euclidean spaces, curves, limits, partial derivatives, differentiability, chain rule, first and second derivative test, maximum and minimum, Taylor polynomials, Lagrange multipliers, implicit function theorem.",
+      "enrollment_requirement": "Not for students who have taken any one of MATH2010/2018, 2020/2028. Co-requisite: IMSC1038.",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "Students understand the basic concepts and applications of the calculus of functions of several variables, including vectors, functions of several variables, partial derivatives and their applications, and extremum problems, as well as the ideas behind the proofs of the theorems.",
+      "course_syllabus": "vectors, geometry of Euclidean spaces, curves, limits, partial derivatives, differentiability, chain rule, first and second derivative test, maximum and minimum, Taylor polynomials, Lagrange multipliers, implicit function theorem.",
+      "assessment_types": {
+        "Essay test or exam": "50",
+        "Others": "10",
+        "Short answer test or exam": "40"
+      },
+      "feedback_evaluation": "Mid-term evaluation (optional)\nEnd-term evaluation (mandatory)",
+      "required_readings": "- -",
+      "recommended_readings": "* T. Au, Differential Multivariable Calculus, Asian Customized Edition, McGraw Hill\n* G. B. Thomas, M. D. Weir and J. Hass, Thomas' Calculus, Pearson\n* H. Anton, I. Bivens and S. Davis, Anton's Calculus, Early Transcendentals, Wiley\n* C. H. Edwards and D. E. Penney, Calculus, Early Transcendentals, Prentice Hall"
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "2028",
+      "title": "Calculus II",
+      "credits": "3.00",
+      "terms": [
+        {
+          "term_code": "2390",
+          "term_name": "2025-26 Term 2",
+          "schedule": [
+            {
+              "section": "--LEC (9668)",
+              "meetings": [
+                {
+                  "time": "Mo 1:30PM - 3:15PM",
+                  "location": "Wong Foo Yuan Bldg 403",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "5/1, 12/1, 19/1, 26/1, 2/2, 9/2"
+                },
+                {
+                  "time": "Mo 1:30PM - 3:15PM",
+                  "location": "Wong Foo Yuan Bldg 403",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "23/2"
+                },
+                {
+                  "time": "Mo 1:30PM - 3:15PM",
+                  "location": "Wong Foo Yuan Bldg 403",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "9/3, 16/3, 23/3, 30/3"
+                },
+                {
+                  "time": "Mo 1:30PM - 3:15PM",
+                  "location": "Wong Foo Yuan Bldg 403",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "13/4"
+                },
+                {
+                  "time": "Th 2:30PM - 3:15PM",
+                  "location": "T.C. Cheng Bldg 205",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "8/1, 15/1, 22/1, 29/1, 5/2, 12/2"
+                },
+                {
+                  "time": "Th 2:30PM - 3:15PM",
+                  "location": "T.C. Cheng Bldg 205",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "26/2"
+                },
+                {
+                  "time": "Th 2:30PM - 3:15PM",
+                  "location": "T.C. Cheng Bldg 205",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "12/3, 19/3, 26/3, 2/4, 9/4, 16/4"
+                }
+              ],
+              "availability": {
+                "capacity": "20",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "7",
+                "status": "Open"
+              },
+              "class_attributes": "English only"
+            },
+            {
+              "section": "-T01-TUT (9669)",
+              "meetings": [
+                {
+                  "time": "Th 3:30PM - 4:15PM",
+                  "location": "T.C. Cheng Bldg 205",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "8/1, 15/1, 22/1, 29/1, 5/2, 12/2"
+                },
+                {
+                  "time": "Th 3:30PM - 4:15PM",
+                  "location": "T.C. Cheng Bldg 205",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "26/2"
+                },
+                {
+                  "time": "Th 3:30PM - 4:15PM",
+                  "location": "T.C. Cheng Bldg 205",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "12/3, 19/3, 26/3, 2/4, 9/4, 16/4"
+                }
+              ],
+              "availability": {
+                "capacity": "20",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "7",
+                "status": "Open"
+              },
+              "class_attributes": "English only"
+            }
+          ]
+        }
+      ],
+      "description": "This is a continuation of IMSC2018. The following topics will be discussed: multiple integrals in n-dimensions: areas and n-volumes, surface areas, volumes of submanifolds and hypersurfaces in n-space, change of variables; vector analysis: line integrals, surface integrals, integration on submanifolds, Green theorem, divergence theorem and Stokes theorem in n-dimensions.",
+      "enrollment_requirement": "Not for students who have taken MATH2020/2028. Pre-requisite: IMSC2018.",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "Students understand the theory and the applications of multiple integrals. These include line integrals, multiple integrals, surface integrals and applications to vector analysis, as well as the ideas behind the proofs of the theorems.",
+      "course_syllabus": "Multiple integrals in n-dimensions: areas and n-volumes, surface areas, volumes of submanifolds and hypersurfaces in n-space, change of variables; vector analysis: line integrals, surface integrals, integration on submanifolds, Green theorem, divergence theorem and Stokes theorem in n-dimensions.",
+      "assessment_types": {
+        "Essay test or exam": "50",
+        "Others": "10",
+        "Short answer test or exam": "40"
+      },
+      "feedback_evaluation": "Mid-term evaluation (optional)\nEnd-term evaluation (mandatory)",
+      "required_readings": "- -",
+      "recommended_readings": "- T. Au, Differential Multivariable Calculus, Asian Customized Edition, McGraw Hill\n- C. H. Edwards and D. E. Penney, Calculus, Early Transcendentals, Prentice Hall\n- W. Fleming, Functions of Several Variables, Springer\n- S. Lang, Calculus of Several Variables, Springer\n- M. Spivak, Calculus on Manifolds, Addison-Wesley\n- J. Stewart, Calculus Multivariables, Cengage Learning\n- G. B. Thomas, M. D. Weir and J. Hass, Thomas' Calculus, Pearson"
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "2041",
+      "title": "Basic Physics III",
+      "credits": "3.00",
+      "terms": [],
+      "description": "This introductory calculus-based course discusses the basic principles of thermodynamics, special relativity, and quantum mechanics. Topics include the laws of thermodynamics and the kinetic theory of gases; relativistic kinematics, relativistic dynamics, old quantum theory, wavefunctions, and applications of quantum physics, such as atoms, molecules, solids and nuclei and particle physics.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "2048",
+      "title": "Algebra II",
+      "credits": "3.00",
+      "terms": [
+        {
+          "term_code": "2390",
+          "term_name": "2025-26 Term 2",
+          "schedule": [
+            {
+              "section": "--LEC (9670)",
+              "meetings": [
+                {
+                  "time": "Tu 2:30PM - 4:15PM",
+                  "location": "Wu Ho Man Yuen Bldg 401",
+                  "instructor": "Dr. YU Chenglong",
+                  "dates": "6/1, 13/1, 20/1, 27/1, 3/2, 10/2"
+                },
+                {
+                  "time": "Tu 2:30PM - 4:15PM",
+                  "location": "Wu Ho Man Yuen Bldg 401",
+                  "instructor": "Dr. YU Chenglong",
+                  "dates": "24/2"
+                },
+                {
+                  "time": "Tu 2:30PM - 4:15PM",
+                  "location": "Wu Ho Man Yuen Bldg 401",
+                  "instructor": "Dr. YU Chenglong",
+                  "dates": "10/3, 17/3, 24/3, 31/3"
+                },
+                {
+                  "time": "Tu 2:30PM - 4:15PM",
+                  "location": "Wu Ho Man Yuen Bldg 401",
+                  "instructor": "Dr. YU Chenglong",
+                  "dates": "14/4"
+                },
+                {
+                  "time": "Th 10:30AM - 11:15AM",
+                  "location": "Li Dak Sum Building 214",
+                  "instructor": "Dr. YU Chenglong",
+                  "dates": "8/1, 15/1, 22/1, 29/1, 5/2, 12/2"
+                },
+                {
+                  "time": "Th 10:30AM - 11:15AM",
+                  "location": "Li Dak Sum Building 214",
+                  "instructor": "Dr. YU Chenglong",
+                  "dates": "26/2"
+                },
+                {
+                  "time": "Th 10:30AM - 11:15AM",
+                  "location": "Li Dak Sum Building 214",
+                  "instructor": "Dr. YU Chenglong",
+                  "dates": "12/3, 19/3, 26/3, 2/4, 9/4, 16/4"
+                }
+              ],
+              "availability": {
+                "capacity": "20",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "7",
+                "status": "Open"
+              },
+              "class_attributes": "English only"
+            },
+            {
+              "section": "-T01-TUT (9671)",
+              "meetings": [
+                {
+                  "time": "Th 11:30AM - 12:15PM",
+                  "location": "Li Dak Sum Building 214",
+                  "instructor": "Dr. YU Chenglong",
+                  "dates": "8/1, 15/1, 22/1, 29/1, 5/2, 12/2"
+                },
+                {
+                  "time": "Th 11:30AM - 12:15PM",
+                  "location": "Li Dak Sum Building 214",
+                  "instructor": "Dr. YU Chenglong",
+                  "dates": "26/2"
+                },
+                {
+                  "time": "Th 11:30AM - 12:15PM",
+                  "location": "Li Dak Sum Building 214",
+                  "instructor": "Dr. YU Chenglong",
+                  "dates": "12/3, 19/3, 26/3, 2/4, 9/4, 16/4"
+                }
+              ],
+              "availability": {
+                "capacity": "20",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "7",
+                "status": "Open"
+              },
+              "class_attributes": "English only"
+            }
+          ]
+        }
+      ],
+      "description": "This is a continuation of IMSC1038. Topics include: abstract vector spaces, linear transformations, matrix representation, nullity and rank, properties of determinants, diagonalization, Cayley-Hamilton theorem, inner product spaces, normal and self-adjoint operators, unitary and orthogonal operators, bilinear forms, dual spaces, canonical forms, spectral theorem.",
+      "enrollment_requirement": "Not for students who have taken MATH2040/2048. Pre-requisite: IMSC1038.",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "We expect students to understand more advanced topics in algebra: abstract vector spaces and linear transformations, eigenvalues and eigenvectors, canonical forms of matrices and linear transformations, inner product spaces, duals spaces and bilinear forms, spectral theorems. Students are expected to understand the ideas underlying the concepts and write rigorous mathematical proofs.",
+      "course_syllabus": "Abstract vector spaces over general fields, subspaces, sum and direct sum, span and linear independence, basis and dimension, product and quotient spaces, examples of infinite dimensional vector spaces, linear transformations and their matrix representations, null space and range, rank-nullity theorem, change of basis formula, invertibility and isomorphism, dual spaces, properties of determinants, eigenvalues and eigenvectors, diagonalization, invariant subspaces and Cayley-Hamilton theorem, inner product spaces, orthogonality, adjoint of an operator, normal and self-adjoint operators, unitary and orthogonal operators, bilinear forms, Jordan canonical forms, spectral theorems and applications.",
+      "assessment_types": {
+        "Essay test or exam": "50",
+        "Others": "10",
+        "Short answer test or exam": "40"
+      },
+      "feedback_evaluation": "Mid-term evaluation (optional)\nEnd-term evaluation (mandatory)",
+      "required_readings": "- -",
+      "recommended_readings": "* S. Friedberg, A. Insel and L. Spence: Linear Algebra\n* C. Curtis: Linear Algebra An Introductory Approach\n* S. Axler: Linear Algebra Done Right\n* P. Halmos: Finite Dimensional Vector Spaces\n* K. Hoffman and R. Kunze: Linear Algebra"
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "2058",
+      "title": "Analysis I",
+      "credits": "3.00",
+      "terms": [
+        {
+          "term_code": "2380",
+          "term_name": "2025-26 Term 1",
+          "schedule": [
+            {
+              "section": "--LEC (9876)",
+              "meetings": [
+                {
+                  "time": "Mo 2:30PM - 4:15PM",
+                  "location": "William M W Mong Eng Bldg 706",
+                  "instructor": "Professor LEUNG Chi Wai",
+                  "dates": "1/9, 8/9, 15/9, 22/9, 29/9, 6/10, 13/10, 20/10, 27/10, 3/11, 10/11, 17/11, 24/11"
+                },
+                {
+                  "time": "We 11:30AM - 12:15PM",
+                  "location": "T.C. Cheng Bldg 205",
+                  "instructor": "Professor LEUNG Chi Wai",
+                  "dates": "3/9, 10/9, 17/9, 24/9"
+                },
+                {
+                  "time": "We 11:30AM - 12:15PM",
+                  "location": "T.C. Cheng Bldg 205",
+                  "instructor": "Professor LEUNG Chi Wai",
+                  "dates": "8/10, 15/10, 22/10"
+                },
+                {
+                  "time": "We 11:30AM - 12:15PM",
+                  "location": "T.C. Cheng Bldg 205",
+                  "instructor": "Professor LEUNG Chi Wai",
+                  "dates": "5/11, 12/11, 19/11, 26/11"
+                }
+              ],
+              "availability": {
+                "capacity": "20",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "7",
+                "status": "Open"
+              },
+              "class_attributes": "English only"
+            },
+            {
+              "section": "-T01-TUT (9881)",
+              "meetings": [
+                {
+                  "time": "We 12:30PM - 1:15PM",
+                  "location": "T.C. Cheng Bldg 205",
+                  "instructor": "Professor LEUNG Chi Wai",
+                  "dates": "3/9, 10/9, 17/9, 24/9"
+                },
+                {
+                  "time": "We 12:30PM - 1:15PM",
+                  "location": "T.C. Cheng Bldg 205",
+                  "instructor": "Professor LEUNG Chi Wai",
+                  "dates": "8/10, 15/10, 22/10"
+                },
+                {
+                  "time": "We 12:30PM - 1:15PM",
+                  "location": "T.C. Cheng Bldg 205",
+                  "instructor": "Professor LEUNG Chi Wai",
+                  "dates": "5/11, 12/11, 19/11, 26/11"
+                }
+              ],
+              "availability": {
+                "capacity": "20",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "7",
+                "status": "Open"
+              },
+              "class_attributes": "English only"
+            }
+          ]
+        }
+      ],
+      "description": "This course is intended to provide conceptual understanding in the theory of functions of one or more real variables. Topics include: real numbers, real valued functions, set notations; limits of sequences (including limsup and liminf), convergence, Bolzano-Weierstrass, infinite series; limits of functions, continuous functions, uniform continuity.",
+      "enrollment_requirement": "Not for students who have taken MATH2050/2058. Co-requisite: IMSC1038.",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "We emphasize the rigorous epsilon-delta approach to analysis, which is crucial for a solid study of analysis. After taking and passing this course, a student is expected\n\n* to understand the axioms of the real number system (constructions such as the Dedekind cuts are not necessary),\n* to know the basic properties of countable and uncountable sets (must know that real numbers and irrational numbers are uncountable) and the statement of the continuum hypothesis,\n* to familiarize with the concept of limits of sequences, series and functions, and\n* to know the concept of continuity and uniform continuity for functions on the real line, on higher dimensional Euclidean spaces, as well as relevant results.",
+      "course_syllabus": "Real numbers, real valued functions, set notations; limits of sequences (including limsup and liminf), convergence, Bolzano- Weierstrass, infinite series; limits of functions, continuous functions, uniform continuity.",
+      "assessment_types": {
+        "Essay test or exam": "50",
+        "Others": "10",
+        "Short answer test or exam": "40"
+      },
+      "feedback_evaluation": "Mid-term evaluation (optional)\nEnd-term evaluation (mandatory)",
+      "required_readings": "- -",
+      "recommended_readings": "* Introduction to Real Analysis, 3rd Edition, by R.G. Bartle and D.R. Sherbert, John-Wiley and Sons, NY\n* Principles of Mathematical Analysis, 3rd Edition, by W. Rudin, McGraw-Hill, International Editions\n* Functions of Several Variables, 2nd Edition, by W. Fleming, Undergraduate Texts in Mathematics, Springer-Verlag, New York\n* Mathematical Analysis I and II, Fudan University, Commerce Press"
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "2068",
+      "title": "Analysis II",
+      "credits": "3.00",
+      "terms": [
+        {
+          "term_code": "2390",
+          "term_name": "2025-26 Term 2",
+          "schedule": [
+            {
+              "section": "--LEC (9672)",
+              "meetings": [
+                {
+                  "time": "Mo 9:30AM - 11:15AM",
+                  "location": "Yasumoto Int'l Acad Park 408",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "5/1, 12/1, 19/1, 26/1, 2/2, 9/2"
+                },
+                {
+                  "time": "Mo 9:30AM - 11:15AM",
+                  "location": "Yasumoto Int'l Acad Park 408",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "23/2"
+                },
+                {
+                  "time": "Mo 9:30AM - 11:15AM",
+                  "location": "Yasumoto Int'l Acad Park 408",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "9/3, 16/3, 23/3, 30/3"
+                },
+                {
+                  "time": "Mo 9:30AM - 11:15AM",
+                  "location": "Yasumoto Int'l Acad Park 408",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "13/4"
+                },
+                {
+                  "time": "We 8:30AM - 9:15AM",
+                  "location": "Lee Shau Kee Building 203",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "7/1, 14/1, 21/1, 28/1, 4/2, 11/2"
+                },
+                {
+                  "time": "We 8:30AM - 9:15AM",
+                  "location": "Lee Shau Kee Building 203",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "25/2"
+                },
+                {
+                  "time": "We 8:30AM - 9:15AM",
+                  "location": "Lee Shau Kee Building 203",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "11/3, 18/3, 25/3, 1/4, 8/4, 15/4"
+                }
+              ],
+              "availability": {
+                "capacity": "20",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "7",
+                "status": "Open"
+              },
+              "class_attributes": "English only"
+            },
+            {
+              "section": "-T01-TUT (9673)",
+              "meetings": [
+                {
+                  "time": "We 9:30AM - 10:15AM",
+                  "location": "Lee Shau Kee Building 203",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "7/1, 14/1, 21/1, 28/1, 4/2, 11/2"
+                },
+                {
+                  "time": "We 9:30AM - 10:15AM",
+                  "location": "Lee Shau Kee Building 203",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "25/2"
+                },
+                {
+                  "time": "We 9:30AM - 10:15AM",
+                  "location": "Lee Shau Kee Building 203",
+                  "instructor": "Dr. XU Lingda",
+                  "dates": "11/3, 18/3, 25/3, 1/4, 8/4, 15/4"
+                }
+              ],
+              "availability": {
+                "capacity": "20",
+                "enrolled": "13",
+                "waitlist_capacity": "0",
+                "waitlist_total": "0",
+                "available_seats": "7",
+                "status": "Open"
+              },
+              "class_attributes": "English only"
+            }
+          ]
+        }
+      ],
+      "description": "This is a continuation of IMSC2058. Topics include: differentiability in one or higher dimensions, mean-value theorem, Taylor theorem, convexity; integrability in one or higher dimensions, fundamental theorem of calculus, improper integrals, Fubini's theorem for double series and continuous functions; power series, radius of convergence, series for elementary functions, real analyticity; sequence and series of functions, uniform convergence.",
+      "enrollment_requirement": "Not for students who have taken MATH2060/2068. Pre-requisite: IMSC2058.",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "After taking and passing this course a student will be able\n(1) to know the properties of differentiable functions and convex functions,\n(2) to use Darboux sums to study Riemann integrable functions and learn the Taylor formula with remainder,\n(3) to understand the fundamental theorems of calculus which relate integration to differentiation, and\n(4) to know basic tests for convergence of infinite series and functions, and\n(5) to know how the elementary functions including the exponential, logarithmic, and trigonometric functions are rigorously defined.\nIn (1)-(3) he/she should master those examples and counterexamples which illustrate the applicability of various theorems.",
+      "course_syllabus": "Differentiability in one or higher dimensions, mean-value theorem, Taylor theorem, convexity; integrability in one or higher dimensions, fundamental theorem of calculus, improper integrals, Fubini's theorem for double series and continuous functions; power series, radius of convergence, series for elementary functions, real analyticity; sequence and series of functions, uniform convergence.",
+      "assessment_types": {
+        "Essay test or exam": "50",
+        "Others": "10",
+        "Short answer test or exam": "40"
+      },
+      "feedback_evaluation": "Mid-term evaluation (optional)\n\nEnd-term evaluation (mandatory)",
+      "required_readings": "- -",
+      "recommended_readings": "* Introduction to Real Analysis, 3rd Edition, by R.G. Bartle and D.R. Sherbert, John-Wiley and Sons, NY\n* Principles of Mathematical Analysis, 3rd Edition, by W. Rudin, McGraw-Hill, International Editions\n* Functions of Several Variables, 2nd Edition, by W. Fleming, Undergraduate Texts in Mathematics, Springer-Verlag, New York\n* Mathematical Analysis I and II, Fudan University, Commerce Press\n* Calculus on manifolds, by M. Spivak, Westview Press"
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "2078",
+      "title": "Algebra III",
+      "credits": "3.00",
+      "terms": [],
+      "description": "This is a continuation of IMSC1038 and IMSC2048. This course is designed as a rigorous introduction to the theory of commutative algebra. The tools relevant to the study of commutative algebra from homological algebra and category theory will be picked up as well.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "2230",
+      "title": "Complex Analysis",
+      "credits": "3.00",
+      "terms": [],
+      "description": "This course provides a rigorous introduction to the theory and methods of complex analysis.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "2240",
+      "title": "Analysis III",
+      "credits": "3.00",
+      "terms": [],
+      "description": "This is a continuation of IMSC2058 and IMSC2068. This course provides a rigorous introduction to functional analysis.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "3250",
+      "title": "Geometry I",
+      "credits": "3.00",
+      "terms": [],
+      "description": "This course is a continuation of IMSC2018, IMSC2028 and IMSC3260. It is intended as a study of various properties of smooth manifolds, and various basic concepts and constructions associated to the notion of smooth manifolds. It platforms further courses in topology and differential geometry, and mathematical physics.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "3260",
+      "title": "Topology I",
+      "credits": "3.00",
+      "terms": [],
+      "description": "This course is intended as an introduction to the elements of topology, including the notion of topological space and concepts associated to it, and the basic results and applications about fundamental groups and covering spaces. It serves as a platform for further courses in geometry and topology.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "3270",
+      "title": "Differential Equations I",
+      "credits": "3.00",
+      "terms": [],
+      "description": "This course is intended as an introduction to the basic theory and methods of ordinary differential equations (ODE’s) and partial differential equations (PDE’s). The emphasis of the course is the application of simple analytic and geometric methods for finding, or describing, solutions for various types of ODE’s and PDE’s (and various types of initial/boundary value problems involving such equations). This is supplemented by elements of the qualitative theory behind the methods. This course platforms further courses about differential equations, numerical analysis, and mathematical physics.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "3280",
+      "title": "Probability Theory I",
+      "credits": "3.00",
+      "terms": [],
+      "description": "This course is intended as an introduction to the elements of probability theory and stochastic analysis.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "3290",
+      "title": "Numerical Mathematics I",
+      "credits": "3.00",
+      "terms": [],
+      "description": "This course provides a rigorous introduction to the theory and methods of numerical analysis.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "3300",
+      "title": "Mathematical Foundations of Data Analytics and Machine Learning",
+      "credits": "3.00",
+      "terms": [],
+      "description": "This course provides an introduction to the mathematical foundations of data analytics and machine learning. It emphasizes the mathematical theories and methods that underpin various branches of data sciences, such as knowledge discovery in databases, machine learning, and artificial intelligence.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "4011",
+      "title": "Intermediate Topics in Algebra and Number Theory I",
+      "credits": "3.00",
+      "terms": [],
+      "description": "Various topics selected from algebra and number theory. The selection of the topics depends on the field of interest of the instructor.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "4012",
+      "title": "Intermediate Topics in Algebra and Number Theory II",
+      "credits": "3.00",
+      "terms": [],
+      "description": "Various topics selected from algebra and number theory. The selection of the topics depends on the field of interest of the instructor.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "4021",
+      "title": "Intermediate Topics in Analysis and Differential Equations I",
+      "credits": "3.00",
+      "terms": [],
+      "description": "Various topics selected from analysis and differential equations. The selection of the topics depends on the field of interest of the instructor.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "4022",
+      "title": "Intermediate Topics in Analysis and Differential Equations II",
+      "credits": "3.00",
+      "terms": [],
+      "description": "Various topics selected from analysis and differential equations. The selection of the topics depends on the field of interest of the instructor.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "4031",
+      "title": "Intermediate Topics in Geometry and Topology I",
+      "credits": "3.00",
+      "terms": [],
+      "description": "Various topics selected from geometry and topology. The selection of the topics depends on the field of interest of the instructor.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "4032",
+      "title": "Intermediate Topics in Geometry and Topology II",
+      "credits": "3.00",
+      "terms": [],
+      "description": "Various topics selected from geometry and topology. The selection of the topics depends on the field of interest of the instructor.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "4041",
+      "title": "Intermediate Topics in Computational and Applied Mathematics I",
+      "credits": "3.00",
+      "terms": [],
+      "description": "Various topics selected from computational and applied mathematics. The selection of the topics depends on the field of interest of the instructor.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "4042",
+      "title": "Intermediate Topics in Computational and Applied Mathematics II",
+      "credits": "3.00",
+      "terms": [],
+      "description": "Various topics selected from computational and applied mathematics. The selection of the topics depends on the field of interest of the instructor.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "4051",
+      "title": "Intermediate Topics in Probability and Statistics I",
+      "credits": "3.00",
+      "terms": [],
+      "description": "Various topics selected from probability and statistics. The selection of the topics depends on the field of interest of the instructor.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "4052",
+      "title": "Intermediate Topics in Probability and Statistics II",
+      "credits": "3.00",
+      "terms": [],
+      "description": "Various topics selected from probability and statistics. The selection of the topics depends on the field of interest of the instructor.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "4061",
+      "title": "Intermediate Topics in Mathematical Physics I",
+      "credits": "3.00",
+      "terms": [],
+      "description": "Various topics selected from mathematical physics. The selection of the topics depends on the field of interest of the instructor.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "4062",
+      "title": "Intermediate Topics in Mathematical Physics II",
+      "credits": "3.00",
+      "terms": [],
+      "description": "Various topics selected from mathematical physics. The selection of the topics depends on the field of interest of the instructor.",
+      "enrollment_requirement": "",
+      "course_attributes": "",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Lecture\nInteractive Tutorial",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "4800",
+      "title": "Undergraduate Project",
+      "credits": "3.00",
+      "terms": [],
+      "description": "A project in mathematics, either in research or in reviewing the literature of an advanced topic. Each section may be taken by an individual student or a team of two students.",
+      "enrollment_requirement": "",
+      "course_attributes": "Capstone Course",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Project",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    },
+    {
+      "subject": "IMSC",
+      "course_code": "4900",
+      "title": "Undergraduate Seminar",
+      "credits": "3.00",
+      "terms": [],
+      "description": "This is a Capstone Course. Small group work on topics in mathematics. Knowledge in other fields related to mathematics may be discussed.",
+      "enrollment_requirement": "",
+      "course_attributes": "Capstone Course",
+      "academic_career": "Undergraduate",
+      "grading_basis": "Graded",
+      "component": "Seminar",
+      "campus": "Main Campus",
+      "academic_group": "Artic BSc PhD Pgm in Math Sci",
+      "academic_org": "Artic BSc PhD Pgm in Math Sci",
+      "learning_outcomes": "",
+      "course_syllabus": "",
+      "assessment_types": {},
+      "feedback_evaluation": "",
+      "required_readings": "",
+      "recommended_readings": ""
+    }
+  ]
+}

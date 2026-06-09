@@ -1,0 +1,133 @@
+# AutoCUSIS personal profile: completed work + planning settings.
+#
+# `credits` is set explicitly on each completed course because many subjects
+# are not ingested into the catalog (the credit_fn default is 3.0, which would
+# be wrong for 0/1/2-credit courses).
+
+name: null
+program: AIST
+cohort: "2024"
+
+# Planning starts at 2026-27 Term 1 (summer 2026; deferred 2025-26 Term 2).
+# Degree horizon: cohort 2024 entry (2024-25) through graduation 2028-29 Term 2.
+start_year_label: "2026-27"
+current_year: 3
+current_term: 1
+
+max_credits_per_term: 18
+min_credits_per_term: 9
+max_credits_per_year: 39
+planning_horizon_years: 5
+allow_summer: false
+planning_mode: spread
+
+completed:
+  # -- 2024-25 Term 1 -----------------------------------------------------
+  - code: AIST1000
+    grade: A
+    term_taken: "2024-25 Term 1"
+    credits: 1
+  - code: CHLT1104
+    grade: P
+    term_taken: "2024-25 Term 2"
+    credits: 0
+  - code: GESH1000
+    grade: PP
+    term_taken: "2024-25 Term 1"
+    credits: 0
+  - code: GESH1010
+    grade: A
+    term_taken: "2024-25 Term 1"
+    credits: 3
+  - code: MATH1020
+    grade: B+
+    term_taken: "2024-25 Term 1"
+    credits: 3
+  - code: MATH1510
+    grade: B
+    term_taken: "2024-25 Term 1"
+    credits: 3
+  - code: PHYS1003
+    grade: A-
+    term_taken: "2024-25 Term 1"
+    credits: 3
+  - code: UGFN1000
+    grade: A
+    term_taken: "2024-25 Term 1"
+    credits: 3
+
+  # -- 2024-25 Term 2 -----------------------------------------------------
+  - code: ELTU2014
+    grade: A
+    term_taken: "2024-25 Term 2"
+    credits: 3
+  - code: ENGG1110
+    grade: A
+    term_taken: "2024-25 Term 2"
+    credits: 3
+  - code: ENGG1120
+    grade: B-
+    term_taken: "2024-25 Term 2"
+    credits: 3
+  - code: ENGG1130
+    grade: B
+    term_taken: "2024-25 Term 2"
+    credits: 3
+  - code: PHED1017
+    grade: A
+    term_taken: "2024-25 Term 2"
+    credits: 1
+  - code: UGCP1001
+    grade: PA
+    term_taken: "2024-25 Term 2"
+    credits: 1
+  - code: UGFH1000
+    grade: A
+    term_taken: "2024-25 Term 2"
+    credits: 3
+
+  # -- 2025-26 Term 1 (Term 2 deferred) -----------------------------------
+  - code: AIST2010
+    grade: A-
+    term_taken: "2025-26 Term 1"
+    credits: 3
+  - code: CSCI1130
+    grade: B+
+    term_taken: "2025-26 Term 1"
+    credits: 3
+  - code: ENGG2440
+    grade: B-
+    term_taken: "2025-26 Term 1"
+    credits: 3
+  - code: ENGG2760
+    grade: C
+    term_taken: "2025-26 Term 1"
+    credits: 2
+  - code: UGCP1002
+    grade: PA
+    term_taken: "2025-26 Term 1"
+    credits: 1
+
+# Foundation English exempt (ELTU1001/1002 not required). If no special Y3 English
+# is chosen, CUHK auto-assigns ELTU3014 (English for Engineers II) in Term 2.
+prereq_satisfied:
+  - ELTU1001
+  - ELTU1002
+
+priority_pins:
+  - code: ELTU3014
+    year: 1
+    term: 2
+
+exclude_courses:
+  - ELTU3024
+  - ELTU3414
+  - ELTU3415
+  - ELTU3502
+  - ELTU3503
+
+# Section scheduling preferences (used by `plan --with-sections` and `sections generate`).
+schedule_preferences:
+  mode: morning          # shortBreaks | longBreaks | consistentStart | morning | startLate | endEarly | daysOff
+  exclude_full_sections: true
+  pinned_sections: []    # e.g. { course: AIST1110, term_label: "2025-26 Term 2", section_ids: [L01] }

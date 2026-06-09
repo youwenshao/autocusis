@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+
+# AutoCUSIS local state
+data/catalog.sqlite
+data/sections.sqlite
+data/catalog.db
+data/*.sqlite-journal
+data/pdf_cache/
+data/catalog_html/
+data/outstanding_*.txt
+data/plan.json
+data/plan.md
+data/plan-*.json
+data/plan-*.md
+.autocusis_session/
+
+# Editor / IDE
+.cursor/
+.DS_Store
+*.swp

@@ -1,0 +1,122 @@
+[
+  {
+    "rank": 1,
+    "score": 5547777.777777778,
+    "courses": [
+      {
+        "code": "AIST1110",
+        "bundle_id": "LEC-L01",
+        "sections": [
+          "LEC",
+          "L01"
+        ]
+      },
+      {
+        "code": "AIST3020",
+        "bundle_id": "LEC-L01",
+        "sections": [
+          "LEC",
+          "L01"
+        ]
+      },
+      {
+        "code": "CSCI2100",
+        "bundle_id": "A-AT01",
+        "sections": [
+          "A",
+          "AT01"
+        ]
+      }
+    ]
+  },
+  {
+    "rank": 2,
+    "score": 2121111.111111111,
+    "courses": [
+      {
+        "code": "AIST1110",
+        "bundle_id": "LEC-L01",
+        "sections": [
+          "LEC",
+          "L01"
+        ]
+      },
+      {
+        "code": "AIST3020",
+        "bundle_id": "LEC-L01",
+        "sections": [
+          "LEC",
+          "L01"
+        ]
+      },
+      {
+        "code": "CSCI2100",
+        "bundle_id": "B-BT02",
+        "sections": [
+          "B",
+          "BT02"
+        ]
+      }
+    ]
+  },
+  {
+    "rank": 3,
+    "score": -825555.555555556,
+    "courses": [
+      {
+        "code": "AIST1110",
+        "bundle_id": "LEC-L01",
+        "sections": [
+          "LEC",
+          "L01"
+        ]
+      },
+      {
+        "code": "AIST3020",
+        "bundle_id": "LEC-L01",
+        "sections": [
+          "LEC",
+          "L01"
+        ]
+      },
+      {
+        "code": "CSCI2100",
+        "bundle_id": "B-BT03",
+        "sections": [
+          "B",
+          "BT03"
+        ]
+      }
+    ]
+  },
+  {
+    "rank": 4,
+    "score": -1838888.888888888,
+    "courses": [
+      {
+        "code": "AIST1110",
+        "bundle_id": "LEC-L01",
+        "sections": [
+          "LEC",
+          "L01"
+        ]
+      },
+      {
+        "code": "AIST3020",
+        "bundle_id": "LEC-L01",
+        "sections": [
+          "LEC",
+          "L01"
+        ]
+      },
+      {
+        "code": "CSCI2100",
+        "bundle_id": "A-AT02",
+        "sections": [
+          "A",
+          "AT02"
+        ]
+      }
+    ]
+  }
+]

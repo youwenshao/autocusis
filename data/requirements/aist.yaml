@@ -1,0 +1,467 @@
+# AutoCUSIS graduation-requirement definition for AIST.
+#
+# Encodes the CUHK B.Sc. in Artificial Intelligence: Systems and Technologies
+# study scheme. The DSL is flat, so the official hierarchy is flattened into one
+# group per leaf requirement.
+#
+# Group rule kinds:
+#   all_of       - every course listed must be completed (core/required)
+#   credits_from - complete at least `min_credits` credits from `courses`
+#   count_from   - complete at least `min_count` courses from `courses`
+#   one_of       - complete every course in exactly one `tracks` entry
+#
+# Completed SHHO / university requirements use the actual course codes from
+# the student's transcript (ELTU2014, GESH1010, UGCP1001/1002, PHED1017).
+
+program: AIST
+cohort: "2024"
+description: "B.Sc. in Artificial Intelligence: Systems and Technologies"
+total_credits_required: 106
+
+groups:
+  # -- University language requirements -----------------------------------
+  - id: chinese_language
+    name: Chinese Language
+    kind: all_of
+    note: "CHLT1104 (0 credits)."
+    courses:
+      - CHLT1104
+
+  - id: english_y2
+    name: English Language Year 2
+    kind: all_of
+    note: "ELTU2014 English for ERG Stds I (3 credits)."
+    courses:
+      - ELTU2014
+
+  - id: english_y3
+    name: English Language Year 3
+    kind: credits_from
+    min_credits: 2
+    max_credits: 2
+    max_pool_count: 1
+    note: "Choose one 2-credit ELTU Year 3 course."
+    courses:
+      - ELTU3014
+      - ELTU3024
+      - ELTU3414
+      - ELTU3415
+      - ELTU3502
+      - ELTU3503
+
+  # -- CUHK General Education ----------------------------------------------
+  - id: ge_foundation
+    name: GE Foundation Programme
+    kind: all_of
+    note: "In Dialogue with Nature (UGFN1000) and In Dialogue with Humanity (UGFH1000)."
+    courses:
+      - UGFN1000
+      - UGFH1000
+
+  - id: ge_area_a
+    name: GE Area A - Chinese Cultural Heritage
+    kind: credits_from
+    min_credits: 2
+    note: >-
+      2 units required. English-offered only (2025-26 T1 class attributes).
+      Pool below is filtered to courses with an English/Putonghua-and-English
+      section; see data/ugea_language.json for per-section MOI. Best 2cr picks:
+      UGEA1881, UGEA2145. UGEA1310/2288 need the English-labelled section.
+    courses:
+      - UGEA1310
+      - UGEA1545
+      - UGEA1881
+      - UGEA2145
+      - UGEA2180
+      - UGEA2283
+      - UGEA2288
+      - UGEA2330
+      - UGEA2332
+      - UGEA2334
+      - UGEA2451
+
+  # -- SHHO College General Education --------------------------------------
+  - id: shho_required_1
+    name: SHHO Required Courses I
+    kind: all_of
+    note: "GESH1010 Orientation and Outreach (3 credits). GESH1000 symposium is 0 credits."
+    courses:
+      - GESH1010
+
+  - id: shho_required_2
+    name: SHHO Required Courses II
+    kind: all_of
+    note: "Both needed: GESH2011 (1cr) and GESH2012 (2cr)."
+    courses:
+      - GESH2011
+      - GESH2012
+
+  - id: understanding_china
+    name: Understanding China
+    kind: all_of
+    note: "UGCP1001 (1 credit)."
+    courses:
+      - UGCP1001
+
+  - id: hk_constitutional
+    name: HK in the Wider Constitutional Order
+    kind: all_of
+    note: "UGCP1002 (1 credit)."
+    courses:
+      - UGCP1002
+
+  - id: physical_education
+    name: Physical Education
+    kind: all_of
+    note: "PHED1017 Physical Conditioning (1 credit)."
+    courses:
+      - PHED1017
+
+  # -- AIST Major ----------------------------------------------------------
+  - id: aist_faculty_package
+    name: Faculty Package
+    kind: all_of
+    note: "ESTR1002/ESTR1005/ESTR1006 are accepted equivalents."
+    courses:
+      - ENGG1110
+      - ENGG1120
+      - ENGG1130
+
+  - id: aist_foundation
+    name: AIST Foundation Courses
+    kind: all_of
+    note: >-
+      ESTR2004/ESTR2018/ESTR2020 are accepted equivalents. CSCI1130 may be taken
+      as an alternative prereq path but does not replace AIST1110 for this group.
+    courses:
+      - AIST1110
+      - ENGG2440
+      - ENGG2760
+      - ENGG2780
+      - MATH1510
+
+  - id: aist_required
+    name: AIST Required Courses
+    kind: credits_from
+    min_credits: 19
+    note: "19 credits required. ESTR variants are equivalents of their CSCI/AIST counterparts."
+    equivalence_tracks:
+      - [CSCI2100, ESTR2102]
+      - [CSCI3160, ESTR3108]
+      - [AIST3030, ESTR3114]
+      - [AIST4010, ESTR4140]
+    courses:
+      - AIST1000
+      - AIST3030
+      - AIST4010
+      - CSCI2100
+      - CSCI2750
+      - CSCI3160
+      - CSCI3230
+      - CSCI3320
+      - ESTR2102
+      - ESTR3108
+      - ESTR3114
+      - ESTR4140
+
+  - id: aist_research
+    name: AIST Research Component
+    kind: one_of
+    note: "6 credits. FYP (AIST4998+4999) or Graduation Thesis (ESTR4998+4999)."
+    tracks:
+      - [AIST4998, AIST4999]
+      - [ESTR4998, ESTR4999]
+
+  - id: aist_practicum
+    name: AIST Practicum Courses
+    kind: all_of
+    note: >-
+      AIST2601 (2cr) + AIST2602 (1cr) = 3 credits. Co-requisites taken together
+      in Term 2 (mirrors CSCI3250/CSCI3251 in the same department).
+    courses:
+      - AIST2601
+      - AIST2602
+
+  - id: major_electives
+    name: AIST Elective and Remaining Courses
+    kind: credits_from
+    min_credits: 22
+    note: "22 credits required from the approved major elective pool."
+    courses:
+      - AIST2010
+      - AIST3020
+      - AIST3110
+      - AIST3120
+      - AIST3510
+      - BMEG2001
+      - BMEG2300
+      - BMEG3101
+      - BMEG3102
+      - BMEG3103
+      - BMEG3105
+      - BMEG3130
+      - BMEG3320
+      - BMEG3420
+      - BMEG3910
+      - BMEG4010
+      - BMEG4320
+      - BMEG4510
+      - CSCI2740
+      - CSCI2750
+      - CSCI3130
+      - CSCI3150
+      - CSCI3170
+      - CSCI3260
+      - CSCI3280
+      - CSCI3290
+      - CSCI3330
+      - CSCI4130
+      - CSCI4160
+      - CSCI4180
+      - CSCI4230
+      - CSCI4250
+      - CSCI4430
+      - CSCI5030
+      - CSCI5120
+      - CSCI5150
+      - CSCI5350
+      - CSCI5550
+      - CSCI5570
+      - CSCI5640
+      - CSCI5650
+      - CSCI5660
+      - EEEN2040
+      - EEEN3010
+      - ELEG3503
+      - ELEG4511
+      - ELEG4512
+      - ELEG5491
+      - ENGG1820
+      - ENGG2030
+      - ENGG2720
+      - ENGG5103
+      - ENGG5105
+      - ENGG5108
+      - ENGG5202
+      - ENGG5501
+      - ESTR2014
+      - ESTR2201
+      - ESTR2206
+      - ESTR2302
+      - ESTR2400
+      - ESTR2540
+      - ESTR2601
+      - ESTR3102
+      - ESTR3306
+      - ESTR3404
+      - ESTR3406
+      - ESTR3408
+      - ESTR3410
+      - ESTR3601
+      - ESTR4104
+      - ESTR4106
+      - ESTR4120
+      - ESTR4122
+      - ESTR4200
+      - ESTR4204
+      - ESTR4218
+      - ESTR4300
+      - ESTR4306
+      - ESTR4312
+      - ESTR4316
+      - ESTR4408
+      - ESTR4410
+      - ESTR4601
+      - FTEC4003
+      - IERG2051
+      - IERG3310
+      - IERG3320
+      - IERG4080
+      - IERG4130
+      - IERG4160
+      - IERG4190
+      - IERG4230
+      - IERG4300
+      - IERG4330
+      - IERG5130
+      - LING2003
+      - LING2004
+      - LING2005
+      - LING2006
+      - LING4201
+      - MAEG2020
+      - MAEG3020
+      - MAEG3040
+      - MAEG3050
+      - MAEG3060
+      - MAEG3080
+      - MAEG4010
+      - MAEG4020
+      - MAEG4050
+      - MAEG5090
+      - SEEM2460
+      - SEEM3500
+      - SEEM3510
+      - SEEM4630
+      - SEEM5330
+      - SEEM5680
+      - STAT4001
+      - STAT4005
+
+# -- Elective specialization streams ---------------------------------------
+# Soft preference used by the scheduler to cluster electives toward a chosen
+# specialization (set via profile.elective_stream or `autocusis plan --stream`).
+# Each course in the major_electives pool is curated into exactly one stream;
+# ESTR equivalents follow their CSCI/AIST/MAEG/etc. counterpart. A few generic
+# courses (ENGG1820 internship, ENGG2720/ESTR2014 complex variables) are left
+# unmapped on purpose: they belong to no specialization and act as neutral
+# fallbacks. The bias is soft - the solver still falls back to out-of-stream
+# courses to satisfy credit/prerequisite/availability constraints.
+elective_streams:
+  - id: large_scale_ai
+    name: "Large-scale Artificial Intelligence - Theory and Systems"
+    note: >-
+      Theory of machine learning, statistical inference, online algorithms, and
+      systems primitives: HPC, distributed storage, big data management, data at
+      scale.
+    courses:
+      - AIST3020
+      - CSCI2740
+      - CSCI2750
+      - CSCI3130
+      - CSCI3150
+      - CSCI3170
+      - CSCI4130
+      - CSCI4160
+      - CSCI4180
+      - CSCI4230
+      - CSCI4250
+      - CSCI4430
+      - CSCI5030
+      - CSCI5120
+      - CSCI5150
+      - CSCI5350
+      - CSCI5550
+      - CSCI5570
+      - CSCI5650
+      - ELEG5491
+      - ENGG5103
+      - ENGG5105
+      - ENGG5108
+      - ENGG5202
+      - ENGG5501
+      - ESTR2540
+      - ESTR3102
+      - ESTR4104
+      - ESTR4106
+      - ESTR4120
+      - ESTR4122
+      - ESTR4300
+      - ESTR4306
+      - ESTR4312
+      - ESTR4316
+      - FTEC4003
+      - IERG3310
+      - IERG4080
+      - IERG4130
+      - IERG4300
+      - IERG4330
+      - IERG5130
+      - SEEM2460
+      - SEEM4630
+      - STAT4001
+      - STAT4005
+
+  - id: multimedia
+    name: "Intelligent Multimedia Processing"
+    note: >-
+      Bridging AI with human brain functions to analyze audio, visual, and
+      language data: computer vision, speech processing, human-computer
+      interaction, and natural language processing.
+    courses:
+      - AIST2010
+      - AIST3110
+      - AIST3120
+      - AIST3510
+      - CSCI3260
+      - CSCI3280
+      - CSCI3290
+      - CSCI3330
+      - CSCI5640
+      - ELEG3503
+      - ELEG4511
+      - ELEG4512
+      - ENGG2030
+      - ESTR2206
+      - ESTR2302
+      - ESTR3306
+      - ESTR4218
+      - IERG2051
+      - IERG3320
+      - IERG4160
+      - IERG4190
+      - LING2003
+      - LING2004
+      - LING2005
+      - LING2006
+      - LING4201
+      - SEEM3510
+      - SEEM5330
+      - SEEM5680
+
+  - id: manufacturing_robotics
+    name: "Intelligent Manufacturing and Robotics"
+    note: >-
+      Integrating AI with hardware, mechanical structures, and industrial
+      systems: mechanics, sensing and control, smart factory operations, design
+      and manufacturing, and human-robot interaction.
+    courses:
+      - EEEN2040
+      - EEEN3010
+      - ESTR2400
+      - ESTR3404
+      - ESTR3406
+      - ESTR3408
+      - ESTR3410
+      - ESTR4408
+      - ESTR4410
+      - IERG4230
+      - MAEG2020
+      - MAEG3020
+      - MAEG3040
+      - MAEG3050
+      - MAEG3060
+      - MAEG3080
+      - MAEG4010
+      - MAEG4020
+      - MAEG4050
+      - MAEG5090
+      - SEEM3500
+
+  - id: biomedical
+    name: "Biomedical Intelligence"
+    note: >-
+      Applying AI innovations to clinical medicine, healthcare data, and
+      biological systems: bioinformatics, medical imaging, medical data
+      analytics, and computational health technologies.
+    courses:
+      - BMEG2001
+      - BMEG2300
+      - BMEG3101
+      - BMEG3102
+      - BMEG3103
+      - BMEG3105
+      - BMEG3130
+      - BMEG3320
+      - BMEG3420
+      - BMEG3910
+      - BMEG4010
+      - BMEG4320
+      - BMEG4510
+      - CSCI5660
+      - ESTR2201
+      - ESTR2601
+      - ESTR3601
+      - ESTR4200
+      - ESTR4204
+      - ESTR4601
