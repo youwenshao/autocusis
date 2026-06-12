@@ -28,6 +28,7 @@ _ALREADY_TAKEN_ONLY_RE = re.compile(
 _CLAUSE_STOP = (
     r"(?:"
     r"[.;]\s*(?:Co-?requisite|Course Attributes|New Enrollment|Pre-?requisites?|Preprequisite)"
+    r"|\s+Pre-?requisites?\s*:"
     r"|\.\s*\d+\.\s*"
     r"|\.\s+Not for"
     r"|\s+Not for students who have taken"

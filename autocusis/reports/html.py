@@ -1,0 +1,166 @@
+"""Self-contained HTML study plan report."""
+
+from __future__ import annotations
+
+import html
+from datetime import datetime, timezone
+
+from .. import __version__
+from ..sections.orchestrator import SectionPlan
+from .context import ReportContext
+from .timetable_grid import term_label_slug
+
+
+def render_html_report(
+    section_plan: SectionPlan,
+    context: ReportContext,
+    *,
+    svg_by_term: dict[str, str],
+    ics_slugs: dict[str, str] | None = None,
+) -> str:
+    ics_slugs = ics_slugs or {}
+    program = html.escape(context.profile.program)
+    cohort = html.escape(context.profile.cohort or "")
+    stream = context.stream_name()
+    total_courses = sum(len(s.courses) for s in section_plan.semesters)
+    total_credits = sum(s.total_credits for s in section_plan.semesters)
+
+    parts: list[str] = [
+        "<!DOCTYPE html>",
+        '<html lang="en">',
+        "<head>",
+        '<meta charset="utf-8"/>',
+        '<meta name="viewport" content="width=device-width, initial-scale=1"/>',
+        f"<title>Study Plan — {program}</title>",
+        "<style>",
+        _CSS,
+        "</style>",
+        "</head>",
+        "<body>",
+        f"<header><h1>Study Plan — {program}</h1>",
+    ]
+    if cohort:
+        parts.append(f"<p class='meta'>Cohort {cohort}</p>")
+    if stream:
+        parts.append(f"<p class='meta'>Elective stream: {html.escape(stream)}</p>")
+    parts.append("</header>")
+
+    parts.extend(
+        [
+            "<section class='summary'>",
+            "<h2>Summary</h2>",
+            "<ul>",
+            f"<li>Terms to completion: <strong>{section_plan.objective_terms_used}</strong></li>",
+            f"<li>Courses planned: <strong>{total_courses}</strong></li>",
+            f"<li>Credits planned: <strong>{total_credits:g}</strong></li>",
+            f"<li>Peak load: <strong>{section_plan.peak_term_credits:g} cr/term</strong></li>",
+            "</ul>",
+            "</section>",
+        ]
+    )
+
+    warnings = list(section_plan.warnings) + list(section_plan.notes)
+    if warnings:
+        parts.append("<section class='warnings'><h2>Warnings &amp; notes</h2><ul>")
+        for w in warnings:
+            parts.append(f"<li>{html.escape(w)}</li>")
+        parts.append("</ul></section>")
+
+    for sem in section_plan.semesters:
+        if not sem.courses:
+            continue
+        term = sem.academic_term or sem.label
+        term_esc = html.escape(term)
+        slug = term_label_slug(term)
+        parts.append(f"<details class='term' open><summary><h2>{term_esc}</h2>")
+        parts.append(
+            f"<span class='badge'>{sem.total_credits:g} cr · {html.escape(sem.section_status)}</span>"
+        )
+        parts.append("</summary>")
+
+        parts.append("<h3>Courses</h3><table><thead><tr>")
+        parts.append("<th>Code</th><th>Cr</th><th>Title</th><th>Flags</th></tr></thead><tbody>")
+        for c in sem.courses:
+            flags = []
+            if c.pinned:
+                flags.append("pinned")
+            if c.is_filler:
+                flags.append("free")
+            if c.section_trust:
+                flags.append(c.section_trust)
+            title = "Free elective" if c.is_filler else (c.title or context.course_title(c.code) or "—")
+            parts.append(
+                f"<tr><td>{html.escape(c.code)}</td><td>{c.credits:g}</td>"
+                f"<td>{html.escape(title)}</td><td>{html.escape(', '.join(flags) or '—')}</td></tr>"
+            )
+        parts.append("</tbody></table>")
+
+        if sem.sections:
+            parts.append("<h3>Sections</h3><table><thead><tr>")
+            parts.append("<th>Code</th><th>Lec</th><th>Tut</th><th>Lab</th><th>Seats</th></tr></thead><tbody>")
+            for sec in sem.sections:
+                seats = sec.seats_remaining if sec.seats_remaining is not None else "—"
+                parts.append(
+                    f"<tr><td>{html.escape(sec.course_code)}</td>"
+                    f"<td>{html.escape(sec.lecture or '—')}</td>"
+                    f"<td>{html.escape(sec.tutorial or '—')}</td>"
+                    f"<td>{html.escape(sec.lab or '—')}</td><td>{seats}</td></tr>"
+                )
+            parts.append("</tbody></table>")
+
+        svg = svg_by_term.get(term, "")
+        if svg:
+            parts.append("<h3>Weekly timetable</h3>")
+            parts.append(f"<div class='svg-wrap'>{svg}</div>")
+
+        ics_name = ics_slugs.get(term, f"calendars/{slug}.ics")
+        parts.append(
+            f"<p class='ics-link'>Calendar: <a href='{html.escape(ics_name)}'>{html.escape(ics_name)}</a></p>"
+        )
+
+        if sem.section_notes:
+            parts.append("<blockquote>")
+            for note in sem.section_notes:
+                parts.append(f"<p>{html.escape(note)}</p>")
+            parts.append("</blockquote>")
+
+        parts.append("</details>")
+
+    parts.extend(
+        [
+            "<footer>",
+            f"<p>Generated by AutoCUSIS {__version__} · "
+            f"{datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}</p>",
+            "<p class='disclaimer'>Section schedules may use extrapolated data. "
+            "ICS files use approximate term dates for visualization only.</p>",
+            "</footer>",
+            "</body></html>",
+        ]
+    )
+    return "\n".join(parts)
+
+
+_CSS = """
+body { font-family: system-ui, sans-serif; max-width: 960px; margin: 0 auto; padding: 1.5rem; color: #111; }
+h1 { margin: 0 0 0.25rem; }
+.meta { color: #555; margin: 0.25rem 0; }
+.summary ul { padding-left: 1.25rem; }
+.warnings { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 8px; padding: 0.75rem 1rem; }
+details.term { border: 1px solid #e5e7eb; border-radius: 8px; margin: 1rem 0; padding: 0 1rem 1rem; }
+details.term summary { cursor: pointer; list-style: none; display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+details.term summary h2 { display: inline; margin: 1rem 0 0.5rem; font-size: 1.25rem; }
+.badge { font-size: 0.85rem; color: #6b7280; }
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 0.5rem 0 1rem; }
+th, td { border: 1px solid #e5e7eb; padding: 0.4rem 0.6rem; text-align: left; }
+th { background: #f9fafb; }
+.svg-wrap { overflow-x: auto; margin: 1rem 0; }
+.svg-wrap svg { max-width: 100%; height: auto; }
+.ics-link { font-size: 0.9rem; }
+blockquote { border-left: 3px solid #d1d5db; margin: 0.5rem 0; padding-left: 1rem; color: #4b5563; font-size: 0.9rem; }
+footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; font-size: 0.85rem; color: #6b7280; }
+.disclaimer { font-style: italic; }
+@media print {
+  details.term { break-inside: avoid; }
+  details.term summary { list-style: none; }
+}
+"""

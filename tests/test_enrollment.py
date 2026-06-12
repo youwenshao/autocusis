@@ -156,3 +156,19 @@ def test_csci4430_pdf_truncation_tail():
     parsed = parse_prerequisite("CENG3150 or CSCI3150 or ESTR3102. 2")
     assert parsed.kind == "or"
     assert parsed.referenced_codes() == {"CENG3150", "CSCI3150", "ESTR3102"}
+
+
+def test_split_aist4010_exclusion_before_prerequisite():
+    text = (
+        "Not for students who have taken ESTR4140\n"
+        "Prerequisite: CSCI3230 or CSCI3320 or ESTR3108"
+    )
+    prereq, exclusion = split_enrollment(text)
+    assert exclusion == "ESTR4140"
+    assert "CSCI3230" in prereq
+    _, parsed, _, exclusion_codes = resolve_prerequisite_fields(
+        course_code="AIST4010",
+        enrollment=text,
+    )
+    assert exclusion_codes == ["ESTR4140"]
+    assert parsed.referenced_codes() == {"CSCI3230", "CSCI3320", "ESTR3108"}

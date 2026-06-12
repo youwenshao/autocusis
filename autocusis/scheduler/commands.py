@@ -15,7 +15,14 @@ from ..db import open_catalog
 from ..ingest.availability_store import AvailabilityStore
 from ..paths import default_requirements_path
 from ..profile import Profile
-from ..reports import plan_to_csv, plan_to_markdown, render_plan
+from ..reports import (
+    export_report_bundle,
+    plan_to_csv,
+    plan_to_markdown,
+    render_plan,
+    section_plan_to_markdown,
+)
+from ..reports.commands import build_report_context
 from ..requirements.schema import Curriculum
 from ..sections.db import SectionsDB
 from ..sections.orchestrator import SectionPlan, attach_sections
@@ -57,6 +64,11 @@ def plan(
     export_md: Optional[Path] = typer.Option(None, "--export-md", help="Write the first plan to a Markdown file."),
     export_csv: Optional[Path] = typer.Option(None, "--export-csv", help="Write the first plan to a CSV file."),
     export_json: Optional[Path] = typer.Option(None, "--export-json", help="Write agent-readable JSON plan."),
+    export_report_dir: Optional[Path] = typer.Option(
+        None,
+        "--export-report-dir",
+        help="Write Markdown + HTML + SVG timetables + ICS calendars to a directory.",
+    ),
 ) -> None:
     """Generate one or more optimal study schedules for the remaining courses."""
     if ctx.invoked_subcommand is not None:
@@ -104,7 +116,8 @@ def plan(
 
         first_plan = plans[0]
         section_plan: SectionPlan | None = None
-        if with_sections or export_json:
+        need_sections = with_sections or export_json or export_report_dir is not None
+        if need_sections:
             pref = preference or profile.schedule_preferences.mode
             section_plan = attach_sections(
                 first_plan, profile, db, sections_db,
@@ -127,8 +140,12 @@ def plan(
                         console.print(f"  [yellow]{sem.academic_term}:[/] {note}")
 
     first = plans[0]
+    report_context = build_report_context(profile, cpath) if (export_report_dir or (export_md and section_plan)) else None
     if export_md and first.feasible:
-        Path(export_md).write_text(plan_to_markdown(first))
+        if section_plan and report_context:
+            Path(export_md).write_text(section_plan_to_markdown(section_plan, report_context))
+        else:
+            Path(export_md).write_text(plan_to_markdown(first))
         console.print(f"[green]Wrote Markdown plan to {export_md}[/]")
     if export_csv and first.feasible:
         Path(export_csv).write_text(plan_to_csv(first))
@@ -158,6 +175,13 @@ def plan(
             )
         )
         console.print(f"[green]Wrote JSON plan to {export_json}[/]")
+    if export_report_dir and section_plan and report_context and first.feasible:
+        paths = export_report_bundle(section_plan, export_report_dir, report_context)
+        console.print(
+            f"[green]Wrote report bundle to {paths.out_dir}[/] "
+            f"(course-sheet.md, index.html, {len(paths.timetables)} timetables, "
+            f"{len(paths.calendars)} calendars)"
+        )
 
     if not first.feasible:
         raise typer.Exit(1)

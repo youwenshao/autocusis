@@ -160,6 +160,22 @@ autocusis schema plan
 # Section schedules for one term
 autocusis sections generate --term-label "2026-27 Term 1" \
   --courses AIST3010,CSCI2100 --export-json schedules.json
+
+# Finalize deliverable (Markdown course sheet + HTML + SVG timetables + ICS)
+autocusis plan --with-sections --export-json plan.json --export-report-dir ./report/
+
+# Re-render report from saved JSON without re-solving
+autocusis report --from plan.json --out ./report/
+```
+
+Report bundle output:
+
+```
+report/
+  course-sheet.md       # term-organized plan with section tables
+  index.html            # self-contained browser report
+  timetables/*.svg      # calendar-style weekly grids per term
+  calendars/*.ics       # import into Google/Apple Calendar (approximate dates)
 ```
 
 Add `schedule_preferences` to `data/profile.yaml` (mode, pinned sections) for
@@ -180,7 +196,8 @@ agent-editable lifestyle constraints.
 | `autocusis data status` | catalog + section data coverage |
 | `autocusis status` | requirement progress and gaps |
 | `autocusis profile init / show / add-completed / set / pin` | manage your profile |
-| `autocusis plan [--with-sections] [--export-json]` | generate study plan(s) |
+| `autocusis plan [--with-sections] [--export-json] [--export-report-dir DIR]` | generate study plan(s) |
+| `autocusis report --from plan.json --out DIR` | export Markdown/HTML/SVG/ICS from saved plan |
 | `autocusis sections generate` | section-level timetable for one term |
 | `autocusis schema plan` | dump SectionPlan JSON Schema |
 | `autocusis course CODE` | show a course's details |
@@ -224,7 +241,8 @@ Set `AUTOCUSIS_HOME` to relocate the data root.
 ```
 autocusis/
   cli.py                  # Typer entrypoint
-  models.py db.py profile.py paths.py services.py reports.py
+  models.py db.py profile.py paths.py services.py
+  reports/    markdown.py svg.py html.py ics.py bundle.py
   ingest/   pdf_fetcher.py pdf_parser.py prereq.py
             availability_store.py timetable_scraper.py catalog_scraper.py
             commands.py availability_commands.py

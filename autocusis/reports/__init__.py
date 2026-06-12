@@ -9,7 +9,20 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 
-from .scheduler.plan import Plan
+from ..scheduler.plan import Plan
+from .bundle import ReportPaths, export_report_bundle
+from .context import ReportContext
+from .markdown import section_plan_to_markdown
+
+__all__ = [
+    "ReportContext",
+    "ReportPaths",
+    "export_report_bundle",
+    "plan_to_csv",
+    "plan_to_markdown",
+    "render_plan",
+    "section_plan_to_markdown",
+]
 
 
 def render_plan(console: Console, plan: Plan, index: int | None = None) -> None:

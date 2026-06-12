@@ -35,6 +35,7 @@ packages = [
     "autocusis.requirements",
     "autocusis.scheduler",
     "autocusis.sections",
+    "autocusis.reports",
 ]
 
 [tool.setuptools.package-data]

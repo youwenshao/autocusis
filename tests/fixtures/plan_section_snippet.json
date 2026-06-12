@@ -1,0 +1,292 @@
+{
+  "feasible": true,
+  "semesters": [
+    {
+      "planning_year": 1,
+      "term": 1,
+      "courses": [
+        {
+          "code": "AIST3030",
+          "title": "Numerical Optimization",
+          "credits": 3.0,
+          "planning_year": 1,
+          "term": 1,
+          "is_filler": false,
+          "pinned": false,
+          "bundle_id": "LEC",
+          "section_trust": "extrapolated"
+        },
+        {
+          "code": "BMEG2001",
+          "title": "Introduction to Biomedical Engineering",
+          "credits": 1.0,
+          "planning_year": 1,
+          "term": 1,
+          "is_filler": false,
+          "pinned": false,
+          "bundle_id": "LEC",
+          "section_trust": "extrapolated"
+        },
+        {
+          "code": "CSCI3130",
+          "title": "Formal Languages and Automata Theory",
+          "credits": 3.0,
+          "planning_year": 1,
+          "term": 1,
+          "is_filler": false,
+          "pinned": false,
+          "bundle_id": "LEC",
+          "section_trust": "extrapolated"
+        },
+        {
+          "code": "GESH2011",
+          "title": "Service-learning: Bringing Knowledge to Life",
+          "credits": 1.0,
+          "planning_year": 1,
+          "term": 1,
+          "is_filler": false,
+          "pinned": false,
+          "bundle_id": null,
+          "section_trust": null
+        },
+        {
+          "code": "UGEA1881",
+          "title": "Everyday Chinese Medicine",
+          "credits": 2.0,
+          "planning_year": 1,
+          "term": 1,
+          "is_filler": false,
+          "pinned": false,
+          "bundle_id": null,
+          "section_trust": null
+        }
+      ],
+      "section_status": "partial",
+      "section_notes": [
+        "Using extrapolated section data: AIST3030, BMEG2001, CSCI3130",
+        "BMEG2001: only 2 seats remaining"
+      ],
+      "academic_term": "2026-27 Term 1",
+      "sections": [
+        {
+          "course_code": "AIST3030",
+          "bundle_id": "LEC",
+          "lecture": "LEC",
+          "tutorial": null,
+          "lab": null,
+          "schedule": [
+            {
+              "day": "Monday",
+              "start": "10:30",
+              "end": "12:15",
+              "location": "Basic Med Sci Bldg LT",
+              "section_id": "LEC",
+              "type": "Lecture"
+            },
+            {
+              "day": "Wednesday",
+              "start": "16:30",
+              "end": "17:15",
+              "location": "Science Centre L3",
+              "section_id": "LEC",
+              "type": "Lecture"
+            }
+          ],
+          "seats_remaining": 10
+        },
+        {
+          "course_code": "BMEG2001",
+          "bundle_id": "LEC",
+          "lecture": "LEC",
+          "tutorial": null,
+          "lab": null,
+          "schedule": [
+            {
+              "day": "Tuesday",
+              "start": "11:30",
+              "end": "12:15",
+              "location": "Lady Shaw Bldg LT1",
+              "section_id": "LEC",
+              "type": "Lecture"
+            }
+          ],
+          "seats_remaining": 2
+        },
+        {
+          "course_code": "CSCI3130",
+          "bundle_id": "LEC",
+          "lecture": "LEC",
+          "tutorial": null,
+          "lab": null,
+          "schedule": [
+            {
+              "day": "Monday",
+              "start": "16:30",
+              "end": "18:15",
+              "location": "Mong Man Wai Bldg LT1",
+              "section_id": "LEC",
+              "type": "Lecture"
+            },
+            {
+              "day": "Tuesday",
+              "start": "16:30",
+              "end": "17:15",
+              "location": "Mong Man Wai Bldg LT1",
+              "section_id": "LEC",
+              "type": "Lecture"
+            }
+          ],
+          "seats_remaining": 21
+        }
+      ]
+    },
+    {
+      "planning_year": 1,
+      "term": 2,
+      "courses": [
+        {
+          "code": "AIST2601",
+          "title": "Technology, Society and Engineering Practice",
+          "credits": 2.0,
+          "planning_year": 1,
+          "term": 2,
+          "is_filler": false,
+          "pinned": false,
+          "bundle_id": null,
+          "section_trust": null
+        },
+        {
+          "code": "AIST2602",
+          "title": "Engineering Practicum",
+          "credits": 1.0,
+          "planning_year": 1,
+          "term": 2,
+          "is_filler": false,
+          "pinned": false,
+          "bundle_id": null,
+          "section_trust": null
+        },
+        {
+          "code": "CSCI2100",
+          "title": "Data Structures",
+          "credits": 3.0,
+          "planning_year": 1,
+          "term": 2,
+          "is_filler": false,
+          "pinned": false,
+          "bundle_id": "B-BT02",
+          "section_trust": "extrapolated"
+        },
+        {
+          "code": "ELTU3014",
+          "title": "English for Engineering Students II",
+          "credits": 2.0,
+          "planning_year": 1,
+          "term": 2,
+          "is_filler": false,
+          "pinned": true,
+          "bundle_id": "ASC1-CLW",
+          "section_trust": "extrapolated"
+        },
+        {
+          "code": "GESH2012",
+          "title": "Service-learning: Action towards Personhood",
+          "credits": 2.0,
+          "planning_year": 1,
+          "term": 2,
+          "is_filler": false,
+          "pinned": false,
+          "bundle_id": "J01-PRJ",
+          "section_trust": "extrapolated"
+        }
+      ],
+      "section_status": "partial",
+      "section_notes": [
+        "Using extrapolated section data: CSCI2100, ELTU3014, GESH2012",
+        "CSCI2100: only 4 seats remaining",
+        "ELTU3014: only 3 seats remaining"
+      ],
+      "academic_term": "2026-27 Term 2",
+      "sections": [
+        {
+          "course_code": "CSCI2100",
+          "bundle_id": "B-BT02",
+          "lecture": "B",
+          "tutorial": "BT02",
+          "lab": null,
+          "schedule": [
+            {
+              "day": "Tuesday",
+              "start": "14:30",
+              "end": "15:15",
+              "location": "Esther Lee Bldg LT1",
+              "section_id": "B",
+              "type": "Lecture"
+            },
+            {
+              "day": "Monday",
+              "start": "12:30",
+              "end": "14:15",
+              "location": "Mong Man Wai Bldg LT1",
+              "section_id": "B",
+              "type": "Lecture"
+            },
+            {
+              "day": "Tuesday",
+              "start": "17:30",
+              "end": "18:15",
+              "location": "Y.C. Liang Hall 104",
+              "section_id": "BT02",
+              "type": "Tutorial"
+            }
+          ],
+          "seats_remaining": 4
+        },
+        {
+          "course_code": "ELTU3014",
+          "bundle_id": "ASC1-CLW",
+          "lecture": null,
+          "tutorial": null,
+          "lab": null,
+          "schedule": [
+            {
+              "day": "Wednesday",
+              "start": "12:30",
+              "end": "14:15",
+              "location": "Yasumoto Int'l Acad Park 411",
+              "section_id": "ASC1-CLW",
+              "type": "Other"
+            }
+          ],
+          "seats_remaining": 3
+        },
+        {
+          "course_code": "GESH2012",
+          "bundle_id": "J01-PRJ",
+          "lecture": null,
+          "tutorial": null,
+          "lab": null,
+          "schedule": [
+            {
+              "day": "Friday",
+              "start": "14:30",
+              "end": "17:15",
+              "location": "Lady Shaw Bldg LT6",
+              "section_id": "J01-PRJ",
+              "type": "Other"
+            }
+          ],
+          "seats_remaining": 5
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "warnings": [],
+  "objective_terms_used": 6,
+  "peak_term_credits": 10.0,
+  "data_provenance": {
+    "2026-27 Term 1": "extrapolated from 2025-26 Term 1 at 2026-06-09T04:06:09.489927+00:00",
+    "2026-27 Term 2": "extrapolated from 2025-26 Term 2 at 2026-06-09T04:06:12.971159+00:00"
+  }
+}

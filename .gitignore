@@ -21,6 +21,7 @@ data/plan.json
 data/plan.md
 data/plan-*.json
 data/plan-*.md
+data/report-*/
 .autocusis_session/
 
 # Editor / IDE

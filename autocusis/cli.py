@@ -6,6 +6,7 @@ Built incrementally across phases. Subcommand groups:
   status        - show graduation-requirement progress and gaps
   profile       - inspect the personal profile
   plan          - generate optimal study schedules
+  report        - export formatted plan (Markdown, HTML, SVG, ICS)
   course        - show a single course's details
 """
 
@@ -52,6 +53,7 @@ from .ingest.commands import ingest_app  # noqa: E402
 from .ingest.availability_commands import availability_app  # noqa: E402
 from .requirements.commands import status_app, profile_app  # noqa: E402
 from .scheduler.commands import plan_app, course_app, schema_app  # noqa: E402
+from .reports.commands import report_app  # noqa: E402
 from .sections.commands import sections_app  # noqa: E402
 from .data_commands import data_app  # noqa: E402
 
@@ -60,6 +62,7 @@ app.add_typer(availability_app, name="availability")
 app.add_typer(status_app, name="status")
 app.add_typer(profile_app, name="profile")
 app.add_typer(plan_app, name="plan")
+app.add_typer(report_app, name="report")
 app.add_typer(course_app, name="course")
 app.add_typer(sections_app, name="sections")
 app.add_typer(data_app, name="data")
