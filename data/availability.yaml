@@ -329,6 +329,12 @@ courses:
     source: community
     year: 2025-26
     note: synced from eaglezhen 2025-26 Term 1
+  AIST4010:
+    terms:
+    - 1
+    source: community
+    year: 2025-26
+    note: synced from eaglezhen 2025-26 Term 1; equivalent to ESTR4140
   AIST3120:
     terms:
     - 2
@@ -7462,6 +7468,12 @@ courses:
     source: community
     year: 2025-26
     note: synced from eaglezhen 2025-26 Term 2
+  ENGG1820:
+    terms:
+    - 1
+    - 2
+    source: manual
+    note: Engineering Internship; community 2025-26 T1+T2
   ENGG1910:
     terms:
     - 1
